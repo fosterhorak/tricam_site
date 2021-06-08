@@ -24,7 +24,7 @@ const highlightMenu = () => {
     const selection_credits = document.querySelector('#credits-link');
 
     let scrollPos = window.scrollY;
-    console.log(scrollPos);
+    // console.log(scrollPos);
 
 
 
@@ -33,7 +33,7 @@ const highlightMenu = () => {
     // at around 960 screen width...
     let welcome_prod_unitsBreak1 = 550;
     let prod_units_techBreak1 = 2400;
-    let tech_creditsBreak1 = 3820;
+    let tech_creditsBreak1 = 3770;
 
     
     if (window.innerWidth > 960 && scrollPos <= 1) {
