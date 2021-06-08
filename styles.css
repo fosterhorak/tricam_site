@@ -77,7 +77,6 @@
 
 #logo {
     max-height: 80px;
-
 }
 .navbar_menu {
     display: flex;
@@ -153,6 +152,9 @@
     .navbar_menu {
         display: grid;
         grid-template-columns: auto;
+
+        /* display: flex;
+        justify-content: space-evenly; */
         margin: 0;
         width: 100%;
         position: absolute;
@@ -201,7 +203,7 @@
     .navbar_links {
         text-align: center;
         padding: 2rem;
-        display: table;
+        display: table; 
         width: 100%;
     }
 
@@ -254,6 +256,25 @@
         transform: translateY(-8px) rotate(-45deg);
         /* transition: all 0.2s ease; */
 
+    }
+    .navbar {
+        height: 70px;
+    }
+    
+    .navbar_container {
+        height: 65px;
+    }
+
+    .navbar_logo {
+        max-width: 500px;
+    }
+    
+    #logo {
+        max-height: 55px;
+    }
+    
+    .navbar_item {
+        height: 50px;
     }
 
 
@@ -829,7 +850,20 @@
         margin: 0 auto;
         height: 90%;
     }
-
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+    }
+    
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16 / 9;
+    }
 
     .welcome_content {
         text-align: center;
