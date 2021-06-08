@@ -17,7 +17,9 @@
     <!-- navbar section -->
     <nav class="navbar">
         <div class="navbar_container">
-            <a href="#" class="navbar_logo">Logo</a>
+            <a href="#" class="navbar_logo">
+                <img src="/imgs/logos/Logo 1920x1080 cropped.jpg" id="logo"alt="">
+            </a>
             
             <div class="navbar_toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -29,23 +31,23 @@
                     <a href="#home" class="navbar_links" id="home-page">home</a>
                 </li> -->
                 <li class="navbar_item">
-                    <a href="#section5" class="navbar_links" id="section5-link">welcome</a>
+                    <a href="#welcome" class="navbar_links" id="welcome-link">welcome</a>
                 </li>
                 <li class="navbar_item">
-                    <a href="#section6" class="navbar_links" id="section6-link">prod units</a>
+                    <a href="#prod_units" class="navbar_links" id="prod_units-link">prod units</a>
                 </li>
                 <li class="navbar_item">
-                    <a href="#section3" class="navbar_links" id="section3-link">tech</a>
+                    <a href="#tech" class="navbar_links" id="tech-link">tech</a>
                 </li>
                 <li class="navbar_item">
-                    <a href="#section4" class="navbar_links" id="section4-link">credits</a>
+                    <a href="#credits" class="navbar_links" id="credits-link">credits</a>
                 </li>
 
                 <li class="call-now">
-                    <a href="tel:+1-817-909-4137" class="btn" target="_blank" id="call">817-909-4137</a>
+                    <a href="tel:+1-817-909-4137" class="btn" target="_blank" id="call"> <i class="fas fa-phone"></i></a>
                 </li>
-                <li class="email-now">
-                    <a href="mailto:craige@tricamvideo.com" class="btn" target="_blank" id="call">craige@tricamvideo.com</a>
+                <li class="call-now">
+                    <a href="mailto:craige@tricamvideo.com" class="btn" target="_blank" id="call"><i class="far fa-envelope"></i> </a>
                 </li>
             </ul>
 
@@ -55,10 +57,10 @@
     </nav>
     <!-- end navbar section -->
     
-    <!-- section5 : video section with button(s) -->
-    <div class="section5" id="section5">
-        <div class="section5_container">
-            <div class="section5_content">
+    <!-- welcome : video section with button(s) -->
+    <div class="welcome" id="welcome">
+        <div class="welcome_container">
+            <div class="welcome_content">
                 <!-- NOTE - adding "?start=58" to end of the src will start the video at the 58 second mark -->
                 <!-- NOTE - adding "?autoplay=1" autoplays video -->
                 <!-- autoplay; listed under "allow" -->
@@ -73,20 +75,27 @@
                         allowfullscreen>
                     </iframe>
                 </div>
-                <button class="main_btn"><a href="#">call</a></button>
-                <button class="main_btn"><a href="#">email</a></button>
 
+                <div class="welcome_btns-container">
+                    <button class="vid_btn">
+                        <a href="tel:+1-817-909-4137"  target="_blank" > <i class="fas fa-phone"></i>
+                        </a>
+                    </button>
+                    <button class="vid_btn">
+                        <a href="mailto:craige@tricamvideo.com" target="_blank" ><i class="far fa-envelope"></i> </a>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-    <!-- end section5 -->
-    <!-- section6 : carousel section with button(s) -->
-    <div class="section6" id="section6">
+    <!-- end welcome -->
+    <!-- prod_units : carousel section with button(s) -->
+    <div class="prod_units" id="prod_units">
         <h1>Production Units</h1>
 
-        <div class="section6_container">
+        <div class="prod_units_container">
 
-            <div class="section6_content">
+            <div class="prod_units_content">
                 <!-- note... data-bs-interval="false"  to prevent autoplay (set on carousel div, and replaces data-bs-ride)-->
                 <!-- note... data-bs-interval="3000"  to set transition intervals (sent on carousel-item divs) -->
 
@@ -183,36 +192,36 @@
 
         </div>
     </div>
-    <!-- end section6 -->
+    <!-- end prod_units -->
     
-    <!-- section3 : click-able cards -->
-    <div class="section3" id="section3">
+    <!-- tech : cards -->
+    <div class="tech" id="tech">
         <h1>Technology Offered</h1>
-        <div class="section3_wrapper">
+        <div class="tech_wrapper">
 
-            <div class="section3_card">
+            <div class="tech_card">
                 <h2>Card 1</h2>
                 <p>card content...</p>
                 <div class="card_btn"><button>pow!</button></div>
             </div>
-            <div class="section3_card">
+            <div class="tech_card">
                 <h2>Card 2</h2>
                 <p>card content...</p>
                 <div class="card_btn"><button>bang!</button></div>
             </div>
-            <div class="section3_card">
+            <div class="tech_card">
                 <h2>Card 3</h2>
                 <p>card content...</p>
                 <div class="card_btn"><button>pop!</button></div>
             </div>
-            <div class="section3_card">
+            <div class="tech_card">
                 <h2>Card 4</h2>
                 <p>card content...</p>
                 <div class="card_btn"><button>bam!</button></div>
             </div>
         </div>
     </div>
-    <!-- end section3 -->
+    <!-- end tech -->
 
 
 
@@ -247,26 +256,27 @@
     
     
 
-    <!-- section4 : basic image/logo with button 1 -->
-    <div class="section4" id="section4">
+    <!-- credits : basic image/logo with button 1 -->
+    <div class="credits" id="credits">
         <h1>Credits</h1>
 
-        <div class="section4_container">
+        <div class="credits_container">
 
-            <div class="section4_content">
+            <div class="credits_content">
                 <h1>Section 4</h1>
                 <h2>blah blah blah</h2>
                 <p>more blah blah blahs</p>
-                <button class="main_btn"><a href="#">Boop</a></button>
+                <button class="main_btn"><a href="#">See full credit List</a></button>
             </div>
 
-            <div class="section4_img-container">
-                <div class="section4_img-card" id="card-2"><i class="fas fa-users"></i></div>
+            <!-- make this a carousel too with pics of artists and events on credit list... -->
+            <div class="credits_img-container">
+                <div class="credits_img-card" id="card-2"><i class="fas fa-users"></i></div>
             </div>
 
         </div>
     </div>
-    <!-- end section4 -->
+    <!-- end credits -->
 
 
     <!-- footer -->
@@ -303,7 +313,7 @@
                 <!-- <div class="footer_logo">
                     <a href="/" id="footer_logo">Logo</a>
                 </div> -->
-                <p class="website_rights">© TriCam Video Productions 2021. All rights reserved.</p>
+                <p class="website_rights">© TriCam Video Productions 2011-2021. All rights reserved.</p>
             </div>
         </section>
 
