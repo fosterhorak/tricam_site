@@ -2,6 +2,7 @@ const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar_menu');
 const navLogo = document.querySelector('#navbar_logo');
 
+
 //function to display mobile menu
 const mobileMenu = () => {
     menu.classList.toggle('is-active');
@@ -9,6 +10,8 @@ const mobileMenu = () => {
 };
 
 menu.addEventListener('click', mobileMenu);
+
+
 
 
 
@@ -36,7 +39,7 @@ const highlightMenu = () => {
     let tech_creditsBreak1 = 3770;
 
     
-    if (window.innerWidth > 960 && scrollPos <= 1) {
+    if (window.innerWidth > 960 && scrollPos <= 0) {
         selection_welcome.classList.remove('highlight');
         selection_prod_units.classList.remove('highlight');
         selection_tech.classList.remove('highlight');
