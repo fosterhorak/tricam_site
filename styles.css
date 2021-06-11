@@ -1,4 +1,9 @@
+/* fonts */
 @import url('https: //fonts.googleapis.com/css?family_Montserrat:300,400,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Montserrat&family=Nothing+You+Could+Do&display=swap');
 
 
 /* color palet */
@@ -41,8 +46,7 @@
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
     scroll-behavior: smooth;
-    ;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -101,6 +105,7 @@ background-color: var(--header-black);
     display: flex;
     width: auto;
     white-space: nowrap;
+    font-family: 'Cinzel', serif;
 
     padding: 10px;
     margin: 3px;
@@ -314,9 +319,9 @@ background-color: var(--header-black);
 .welcome {
     /* background: gray; */
     /* background: var(--header-black); */
-    background: linear-gradient(to bottom, var(--header-black), var(--medium-background));
+    background: linear-gradient(to bottom, var(--header-black) 12%, var(--light-background) 50%);
     /* padding: 200px 0; */
-    padding: 1rem 0;
+    padding: 2rem 0 0 0;
 
     /* height: 87vh !important; */
     height: auto !important;
@@ -357,6 +362,52 @@ background-color: var(--header-black);
     padding: 0 20px;
     /* max-height: 700px; */
 
+}
+
+.welcome_content2 {
+    color: var(--light-text);
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    /* background: var(--medium-text);
+    background: linear-gradient(to bottom, var(--medium-text) 0%, #fff 100%); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    margin-top: 20px;
+}
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 890px;
+    justify-content: center;
+}
+.tiles p{
+    padding-left: 20px;
+    font-size: 1.2rem;
+    /* font-family: 'Nothing You Could Do', cursive; */
+    color: #fff;
+    font-weight: bold;;
+
+}
+.tiles p i{
+    color: red;
+    margin-right: 0px;
+    font-size: 1.5rem;
+
+
+}
+
+.welcome_content2 p {
+    max-width: 890px;
+    font-size: 1.5rem;
+    font-weight: 70;
 }
 
 
@@ -407,16 +458,17 @@ background-color: var(--header-black);
     margin: 0 10px;
     cursor: pointer;
     position: relative;
-    transition: all 0.35s;
     outline: none; 
     background: red;
     /* width: 20vw; */
     width: 100%;
     min-width: 35px;
-
+    
     height: 7vw;
     min-height: 30px;
     max-height: 40px;
+    
+    transition: .2s ease transform;
 }
 
 
@@ -426,21 +478,15 @@ background-color: var(--header-black);
     color: #fff;
     text-decoration: none;
 }
-/* .vid_btn:after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: chartreuse;
-    transition: all 0.35s;
-    border-radius: 4px;
-} */
 
-/* .vid_btn:hover{
-    color: purple;
-} */
+.vid_btn a i{
+    margin: 2px 0;
+}
+
+.vid_btn:hover {
+    border: .5px solid #fff;
+    transform: scale(1.05);
+}
 
 .vid_btn:hover:after{
     width: 100%;
@@ -451,16 +497,6 @@ background-color: var(--header-black);
     margin-bottom: 20px;
     color: #fff;
 }
-/* .welcome_content h2{
-    font-size: 4rem;
-} */
-
-/* .welcome_copy {
-    max-width: 900px;
-    margin-top: 100px;
-    display: flex;
-    align-content: center;
-} */
 
 .welcome_content p{
     font-size: 1.5rem;
@@ -537,16 +573,18 @@ background-color: var(--header-black);
         font-size: 2rem;
         margin-top: 1.5rem;
     }
-
-
-    
 }
 /* end welcome styling */
+
+
+
+
+
 
 /* prod_units styling */
 .prod_units {
     /* background: var(--dark-background); */
-    background: linear-gradient(to bottom, var(--dark-background), var(--header-black));
+    background: linear-gradient(to bottom, #fff, var(--light-text));
     padding: 8rem 0;
 }
 
@@ -564,7 +602,7 @@ background-color: var(--header-black);
 }
 
 .prod_units_content {
-    color: #fff;
+    color: black;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -576,6 +614,18 @@ background-color: var(--header-black);
 
 
     /* start carousel css */
+.carousel {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    max-width: 1300px;
+    padding-bottom: 15px;
+    justify-self: center;
+    background-size: cover;
+
+}
+
+
 
 .carousel1_container, .carousel2_container {
     margin: 20px;
@@ -585,9 +635,34 @@ background-color: var(--header-black);
     
 }
 .carousel-item {
-    height: 32rem;
+    /* height: 32rem; */
+    
+    /* width: 100%;
+    height: 100%;
+    max-height: 500px;
+    max-width: 1300px;
     background: var(--header-black);
+    background-size: cover; */
+
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 60vh;
+    aspect-ratio: 16 / 9;
+
+
     position: relative;
+}
+
+.carousel-item img{
+    height: 100%;
+    max-height: 500px;
+    min-height: 200px;
+    width: 100%;
+    max-width: 1300px;
+    min-width: 300px;
 }
 
 /* .container {
@@ -616,14 +691,19 @@ background-color: var(--header-black);
      */
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #fff;
+    color: black;
     justify-self: center;
+    font-family: 'Cinzel', serif;
+
 }
 
 .prod_units_content h2{
-    font-size: 2rem;
+    font-size: 4rem;
     justify-self: center;
-    margin-top: 20px;
+    margin-top: 25px;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: bold;
+
 }
 .prod_units_content p{
     font-size: 1.5rem;
@@ -633,8 +713,6 @@ background-color: var(--header-black);
     max-width: 850px;
     text-align: center;
 }
-
-
 
 
 
@@ -927,6 +1005,8 @@ background-color: var(--header-black);
     margin-bottom: 2px;
     color: #fff;
     justify-self: center;
+    font-family: 'Cinzel', serif;
+
     
 }
 
@@ -939,7 +1019,10 @@ background-color: var(--header-black);
 
 .tech .subHeading {
     color: red;
-    background: var(--tech-black-seethru1)
+    background: var(--tech-black-seethru1);
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: bold;
+
 }
 .tech p{
     font-size: 1.5rem;
@@ -966,7 +1049,7 @@ background-color: var(--header-black);
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to bottom, var(--light-background) 0%, var(--dark-background) 100%);
+    background-image: linear-gradient(to bottom, var(--tech-black-seethru2) 0%, var(--dark-background) 100%);
     transition: 0.3s ease-in;
 }
 
@@ -1032,7 +1115,7 @@ background-color: var(--header-black);
 
 /* credits styling */
 .credits {
-    background: linear-gradient(to bottom, var(--header-black), var(--light-background));
+    background: linear-gradient(to bottom, var(--header-black), var(--dark-background));
     padding: 10rem 0;
     
     height: auto !important;
@@ -1050,6 +1133,8 @@ background-color: var(--header-black);
     margin-bottom: 2px;
     color: #fff;
     justify-self: center;
+    font-family: 'Cinzel', serif;
+
     
 }
 
@@ -1062,13 +1147,15 @@ background-color: var(--header-black);
 
 .credits .subHeading {
     color: red;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: bold;
 }
 .credits p{
     font-size: 1.5rem;
     margin: 20px 10px;
     font-weight: 70;
     justify-self: center;
-    max-width: 850px;
+    max-width: 1250px;
     text-align: center;
     color: #fff;
 }
