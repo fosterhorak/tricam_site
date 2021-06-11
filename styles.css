@@ -9,15 +9,11 @@
 /* color palet */
 :root {  
     --header-black: rgb(6,1,-0);
-
     --tech-black-seethru1: rgb(6,1,-0, 0.6);
     --tech-black-seethru2: rgb(6,1,-0, 0.8);
-
-    
     --dark-background: rgb(20, 20, 20);
     --medium-background: rgb(30, 30, 30);
     --light-background: rgb(40, 40, 40);
-    
     --light-gray: rgb(60, 60, 60);
     --dark-gray: rgb(46, 46, 46);
     --light-blue: rgb(121,212,255);
@@ -27,10 +23,8 @@
     --pale-orange: rgb(225, 179, 114);
     --muted-orange: rgb(205, 122, 96);
     --purple: rgb(117, 88, 139);
-
     --bold-yellow: rgb(245, 192, 0);
     --bold-green:rgb(89, 172, 30);
-
     --white-text:  rgb(255, 255, 255);
     --light-text:  rgb(183, 183, 183);
     --medium-text:  rgb(150, 150, 150);
@@ -252,15 +246,6 @@ background-color: var(--header-black);
         height: 60px;
         width: 80%;
         margin: 0;
-
-        
-        /* text-decoration: none;
-        padding: 10px 20px;
-        border: none;
-        outline: none;
-        border-radius: 4px;
-        background: red;
-        color: #fff; */
     }
 
     #mobile-menu {
@@ -283,29 +268,23 @@ background-color: var(--header-black);
     #mobile-menu.is-active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
         /* transition: all 0.2s ease; */
-
     }
     #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
         /* transition: all 0.2s ease; */
-
     }
     .navbar {
         height: 70px;
     }
-    
     .navbar_container {
         height: 65px;
     }
-
     .navbar_logo {
         max-width: 500px;
     }
-    
     #logo {
         max-height: 55px;
     }
-    
     .navbar_item {
         height: 50px;
     }
@@ -317,10 +296,7 @@ background-color: var(--header-black);
 
 /* welcome styling */
 .welcome {
-    /* background: gray; */
-    /* background: var(--header-black); */
     background: linear-gradient(to bottom, var(--header-black) 12%, var(--light-background) 50%);
-    /* padding: 200px 0; */
     padding: 2rem 0 3rem 0;
 
     /* height: 87vh !important; */
@@ -673,18 +649,6 @@ p a:hover {
     min-width: 300px;
 }
 
-/* .container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 50px;
-} */
-
-/* .carousel-btns_container {
-    margin-top: 70px;
-} */
-
 .carousel-caption {
     align-self: right;
     color:red;
@@ -774,90 +738,14 @@ p a:hover {
 /* end prod_units styling */
 
 
-/* section1 styling */
-/* .section1 {
-    background: var(--header-black);
-    background: linear-gradient(to right, var(--medium-background), var(--header-black));
-    padding: 200px 0;
-}
-
-
-*//* 
-.section1_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 90%;
-    text-align: center;
-    padding: 30px;
-    /* color: red; */
-/* } */
-
-/* .section1_heading {
-    font-size: 100px;
-    margin-bottom: 24px;
-    color: #fff;
-}
-
-.section1_description {
-    font-size: 60px;
-    color: red;
-} */ 
-
 .highlight {
     border-bottom: 4px solid red;
 }
 
 @media screen and (max-width: 768px) {
-    /* .section1_heading {
-        font-size: 60px;
-    }
-    .section1_description {
-        font-size: 40px;
-    } */
-}
-/* end section1 styling */
 
-
-
-/* section2 styling */
-/* .section2 {
-    background: blue;
-    padding: 10rem 0;
 }
 
-.section2_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 90%;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-}
-
-.section2_content {
-    color: #fff;
-    width: 100%;
-}
-.section2_content h1{
-    font-size: 2rem;
-    margin-bottom: 32px;
-}
-.section2_content h2{
-    font-size: 4rem;
-}
-.section2_content p{
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-} */
 
 .main_btn{
     font-size: 1.8rem;
@@ -892,9 +780,6 @@ p a:hover {
     border-radius: 4px;
 }
 
-/* .main_btn:hover{
-    color: purple;
-} */
 
 .main_btn:hover:after{
     width: 100%;
@@ -904,81 +789,21 @@ p a:hover {
     text-align: center;
 }
 
-/* .section2_img-card {
-    margin: 10px;
-    height: 500px;
-    width: 500px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    background-image: linear-gradient(to right, cyan 0%, peachpuff 100%);
-} */
 
 .fa-layer-group, .fa-users {
     font-size: 14rem;
 }
 
 @media screen and (max-width: 1100px) {
-    /* .section2_container {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90%;
-    }
-
-    .section2_img-container {
-        display: flex;
-        justify-content: center;
-    }
-    .section2_img-card {
-        height: 425px;
-        width: 425px;
-    }
-    .section2_content {
-        text-align: center;
-        margin-bottom: 4rem;
-    }
-    .section2_content h1 {
-        font-size: 2.5rem;
-        margin-top: 2rem;
-    }
-    .section2_content h2 {
-        font-size: 3rem;
-    }
-    .section2_content p {
-        font-size: 1rem;
-        margin-top: 1.5rem;
-    } */
 
 
 }
 
 @media screen and (max-width: 480px) {
-    /* .section2_img-card {
-        height: 250px;
-        width: 250px;
-    } */
 
     .fa-users, .fa-layer-group {
         font-size: 4rem;
     }
-
-    /* .section2_content h1 {
-        font-size: 2rem;
-        margin-top: 3rem;
-    }
-    .section2_content h2 {
-        font-size: 2rem;
-    }
-    .section2_content p {
-        font-size: 2rem;
-        margin-top: 1.5rem;
-    } */
 
     .main_btn{
         padding: 12px 36px;
@@ -1071,16 +896,6 @@ p a:hover {
     transition: 0.3s ease-in;
 }
 
-/* .tech_card:nth-child(2) {
-    background-image: linear-gradient(to right, cyan 0%, palevioletred 100%);
-}
-.tech_card:nth-child(3) {
-    background-image: linear-gradient(to right, cyan 0%, lime 100%);
-}
-.tech_card:nth-child(4) {
-    background-image: linear-gradient(to right, cyan 0%, orange 100%);
-} */
-
 .tech_card h2{
     text-align: center;
     color: var(--header-black);
@@ -1112,7 +927,8 @@ p a:hover {
 }
 .tiles2 p{
     font-size: 1rem;
-    margin: 0px;
+    margin: 0px 10px;
+    text-align: center;
     /* font-family: 'Nothing You Could Do', cursive; */
 
 }
