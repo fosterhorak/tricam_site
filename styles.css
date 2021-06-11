@@ -654,6 +654,10 @@ background-color: var(--header-black);
     position: relative;
 }
 
+
+
+
+
 .carousel-item img{
     height: 100%;
     max-height: 500px;
@@ -1055,7 +1059,7 @@ background-color: var(--header-black);
     border: .1px solid var(--header-black);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     color: var(--header-black);
     background-image: linear-gradient(to bottom, #fff 0%, var(--light-text) 100%);
     transition: 0.3s ease-in;
@@ -1086,6 +1090,12 @@ background-color: var(--header-black);
     margin-top: 5px;
     font-size: 20px;
     color: var(--header-black);
+}
+
+.tech_card div{
+    display: flex;
+    justify-content: center;
+
 }
 
 .tiles2 {
