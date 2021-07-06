@@ -32,8 +32,6 @@
 }
 
 
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -201,6 +199,7 @@ background-color: var(--header-black);
         z-index: 995;
         height: 60vh;
         font-size: 1.6rem;
+        width: 100%;
 
         /* display: grid;
         grid-template-columns: auto;
@@ -229,13 +228,13 @@ background-color: var(--header-black);
 
     .navbar_links {
         text-align: center;
-        padding: 2rem;
+        padding: 1rem;
         display: table; 
         width: 100%;
     }
 
     .call-now {
-        padding-bottom: 2rem;
+        padding: 1rem;
         background: var(--header-black);
     }
     
@@ -243,7 +242,7 @@ background-color: var(--header-black);
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 60px;
+        height: 50px;
         width: 80%;
         margin: 0;
     }
@@ -287,6 +286,10 @@ background-color: var(--header-black);
     }
     .navbar_item {
         height: 50px;
+    }
+
+    ol, ul {
+        padding-left: 0rem;
     }
 
 
@@ -494,40 +497,65 @@ background-color: var(--header-black);
         justify-content: center;
         width: 100%;
         margin: 0 auto;
-        height: 90%;
+        height: 95%;
     }
-    .iframe-container {
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%;
-        max-height: 60vh;
 
-    }
-    
-    .iframe-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        max-height: 60vh;
-        aspect-ratio: 16 / 9;
-    }
 
     .welcome_content {
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1.3rem;
     }
     .welcome_content h1 {
-        font-size: 2.5rem;
-        margin-top: 2rem;
+        font-size: 2rem;
     }
     .welcome_content h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .welcome_content p {
-        font-size: 1rem;
-        margin-top: 1.5rem;
+        font-size: .9rem;
+        margin-bottom: 0px;
+    }
+    .welcome_content a {
+        font-size: .9rem;
+    }
+    
+    .vid_btn {
+        align-items: center;
+        height: 50px;
+    }
+    .vid_btn a i {
+        align-self: center;
+        margin: 2px 0;
+        font-size: 1.2rem;
+
+    }
+
+    .tiles {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 400px;
+        justify-content: center;
+    }
+    .tiles p{
+        /* padding-left: 20px; */
+        font-size: 1.2rem;
+        /* font-family: 'Nothing You Could Do', cursive; */
+        color: #fff;
+        font-weight: bold;;
+    
+    }
+    .tiles p i{
+        color: red;
+        margin-right: 0px;
+        font-size: 1.1rem;
+    }
+    
+    .welcome_content2 p {
+        max-width: 890px;
+        font-size: 1.1rem;
+        font-weight: 70;
     }
 
 }
@@ -544,9 +572,12 @@ background-color: var(--header-black);
         font-size: 2rem;
     }
     .welcome_content p {
-        font-size: 2rem;
-        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+
+        /* margin-top: 1.5rem; */
     }
+
 }
 /* end welcome styling */
 
