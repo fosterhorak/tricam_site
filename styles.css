@@ -590,7 +590,7 @@ background-color: var(--header-black);
 .prod_units {
     /* background: var(--dark-background); */
     background: linear-gradient(to bottom, #fff, var(--light-text));
-    padding: 8rem 0;
+    padding: 8rem 2rem;
 }
 
 .prod_units_container {
@@ -737,14 +737,17 @@ p a:hover {
     }
     .prod_units_content h1 {
         font-size: 2.5rem;
-        margin-top: 1.3rem;
+        margin: 1.3rem 0.5rem;
     }
     .prod_units_content h2 {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
+        margin: 0.5rem 0.5rem;
+
     }
     .prod_units_content p {
         font-size: 1rem;
-        margin: 1.1rem 0rem;
+        margin: 0.5rem 1rem;
+
     }
 
 
@@ -771,10 +774,6 @@ p a:hover {
 
 .highlight {
     border-bottom: 4px solid red;
-}
-
-@media screen and (max-width: 768px) {
-
 }
 
 
@@ -886,7 +885,7 @@ p a:hover {
 .tech_content p{
     color: #fff;
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     margin: 0px 20px 50px 20px;
     text-align: center;
 }
@@ -969,9 +968,6 @@ p a:hover {
 }
 
 
-
-
-
 .card_btn {
     display: flex;
     justify-content: center;    
@@ -1001,6 +997,89 @@ p a:hover {
     .tech_wrapper {
         grid-template-columns: 1fr 1fr;
     }
+    .tech h1{
+        font-size: 2.5rem;
+        margin-bottom: 2px;
+        /* color: #fff; */
+        justify-self: center;
+        font-family: 'Cinzel', serif;
+    
+        
+    }
+    
+    .tech h2{
+        font-size: 2.2rem;
+        justify-self: center;
+        margin: 10px 20px 0 20px;
+        /* color: #fff; */
+        text-align: center;
+    
+    }
+    
+    .tech_content p{
+        /* color: #fff; */
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 12px 8px;
+        text-align: center;
+    }
+
+    .tech_card {
+        margin: 20px;
+        height: auto;
+        width: 300px;
+        border-radius: 8px;
+        border: .1px solid var(--header-black);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: var(--header-black);
+        background-image: linear-gradient(to bottom, #fff 0%, var(--light-text) 100%);
+        transition: 0.3s ease-in;
+    }
+    
+    .tech_card h2{
+        text-align: center;
+        color: var(--header-black);
+        color: red;
+        /* font-family: 'Nothing You Could Do', cursive; */
+        
+        font-family: 'Cinzel', serif;
+    
+    }
+    
+    .tech_card p{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 15px;
+        color: var(--header-black);
+    }
+    
+    .tech_card div{
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .tiles2 {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 350px;
+        justify-content: center;
+    }
+    .tiles2 p{
+        font-size: 1rem;
+        margin: 0px 10px;
+        text-align: center;
+        /* font-family: 'Nothing You Could Do', cursive; */
+    
+    }
+    .tiles2 p i{
+        color: red;
+        font-size: 1.1rem;
+    }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1015,7 +1094,7 @@ p a:hover {
 /* credits styling */
 .credits {
     background: linear-gradient(to bottom, var(--header-black), var(--dark-background));
-    padding: 10rem 0 5rem 0;
+    padding: 10rem 1rem 5rem 1rem;
     
     height: auto !important;
     min-height: 100%;
@@ -1148,16 +1227,51 @@ p a:hover {
 }
 
 @media screen and (max-width: 1100px) {
-    .credits_container {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90%;
+    .credits h1{
+        font-size: 2.5rem;
+        margin-bottom: 2px;     
+    }
+    
+    .credits h2{
+        font-size: 2.2rem;
+        justify-self: center;
+        margin-top: 10px;
+    }
+    
+    .credits p{
+        font-size: 1rem;
+        margin: 20px 10px;
+        font-weight: 70;
+        justify-self: center;
+        max-width: 1250px;
+        text-align: center;
     }
 
+    .credits_container {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto 10px auto;
+        height: 90%;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0 50px;
+    }
+    
+    .credits_content {
+        color: #fff;
+        width: 100%;
+        min-width: 200px;
+        max-width: 400px;
+        margin: 15px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        /* margin-top: 20px; */
+        /* align-items: center; */
+    }
     .credits_img-container {
         display: flex;
         justify-content: center;
@@ -1168,18 +1282,19 @@ p a:hover {
     }
     .credits_content {
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
     .credits_content h1 {
-        font-size: 2.5rem;
-        margin-top: 2rem;
+        font-size: 1.8rem;
+        margin: 0rem;
+
     }
     .credits_content h2 {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
     .credits_content p {
         font-size: 1rem;
-        margin-top: 1.5rem;
+        margin-top: 0rem;
     }
 
 
@@ -1191,7 +1306,7 @@ p a:hover {
         width: 250px;
     }
 
-    .fa-users, .fa-layer-group {
+    /* .fa-users, .fa-layer-group {
         font-size: 4rem;
     }
 
@@ -1205,7 +1320,7 @@ p a:hover {
     .credits_content p {
         font-size: 2rem;
         margin-top: 1.5rem;
-    }
+    } */
     
 }
 /* end credits styling */
