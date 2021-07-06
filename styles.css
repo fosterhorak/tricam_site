@@ -737,14 +737,14 @@ p a:hover {
     }
     .prod_units_content h1 {
         font-size: 2.5rem;
-        margin-top: 2rem;
+        margin-top: 1.3rem;
     }
     .prod_units_content h2 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     .prod_units_content p {
         font-size: 1rem;
-        margin-top: 1.5rem;
+        margin: 1.1rem 0rem;
     }
 
 
@@ -753,7 +753,7 @@ p a:hover {
 @media screen and (max-width: 480px) {
 
 
-    .prod_units_content h1 {
+    /* .prod_units_content h1 {
         font-size: 2rem;
         margin-top: 3rem;
     }
@@ -763,7 +763,7 @@ p a:hover {
     .prod_units_content p {
         font-size: 2rem;
         margin-top: 1.5rem;
-    }
+    } */
     
 }
 /* end prod_units styling */
