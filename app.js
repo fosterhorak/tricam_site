@@ -12,10 +12,6 @@ const mobileMenu = () => {
 menu.addEventListener('click', mobileMenu);
 
 
-
-
-
-
 //funtion to show the "active" section (section currently being viewed) in the menu selection
     //NOTE - only want this feature on desktop (not mobile)
 const highlightMenu = () => {
@@ -28,7 +24,6 @@ const highlightMenu = () => {
 
     let scrollPos = window.scrollY;
     // console.log(scrollPos);
-
 
 
     // adds 'highlight' class to my menu items at innerWidth > 960 [do this again for more narrow widths...]
