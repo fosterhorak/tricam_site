@@ -1427,15 +1427,18 @@ p a:hover {
     color: #fff;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1100px) {
+    .footer {
+        min-width: 350px;
+    }
     .footer_links {
-        padding-top: 2rem;
+        padding-top: 1.5;
     }
     #footer_logo {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5;
     }
     .social_media {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5;
     }
     .footer_link-wrapper {
         flex-direction: column;
@@ -1443,6 +1446,61 @@ p a:hover {
     .social_media-wrap {
         flex-direction: column;
     }
+
+    #footer_logo {
+
+        font-size: 1.5rem;
+    }
+    
+ 
+    
+ 
+    
+    .footer_link-items {
+
+        margin: 10px 15px;
+  
+    }
+    
+   
+    .social_icon_link {
+        font-size: 24px;
+    }
+    
+    .social_media {
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    
+    .social_media p {
+        margin-bottom: 0;
+    }
+
+    .social_icon_link {
+        font-size: 1.2rem;
+    }
+    
+    .social_media-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        max-width: 1000px;
+        margin: 40px auto 0 auto;
+    }
+    
+    .social_icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 240px;
+    }
+    
 }
 
 @media screen and (max-width: 480px) {
