@@ -629,7 +629,7 @@ background-color: var(--header-black);
     max-height: 500px;
     aspect-ratio: 16 / 9;
 
-
+    vertical-align: middle;
     position: relative;
 }
 
@@ -642,12 +642,6 @@ p a:hover {
 }
 
 
-
-.carousel-inner{
-    height: 40%;
-    max-height: 500px;
-    min-height: 200px;
-}
 .carousel-item img{
     height: 100%;
     max-height: 500px;
