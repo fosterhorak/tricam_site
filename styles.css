@@ -731,6 +731,14 @@ p a:hover {
 
 }
 
+@media screen and (max-width: 400px) {
+    .carousel-item img{
+        aspect-ratio: 4 / 3;
+    }
+
+
+}
+
 /* end prod_units styling */
 
 
