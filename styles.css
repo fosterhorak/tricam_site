@@ -649,6 +649,8 @@ p a:hover {
     width: 100%;
     max-width: 1300px;
     min-width: 300px;
+    aspect-ratio: 16 / 9;
+
 }
 
 .carousel-caption {
