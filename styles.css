@@ -608,6 +608,10 @@ background-color: var(--header-black);
     
 }
 
+.carousel-inner {
+    height: 100% !important
+
+}
 
 .carousel-item {
     /* height: 32rem; */
