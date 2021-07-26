@@ -632,6 +632,7 @@ background-color: var(--header-black);
     vertical-align: middle;
     align-content: center;
     justify-content: center;
+    
     position: relative;
 }
 
