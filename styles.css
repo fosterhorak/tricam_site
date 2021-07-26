@@ -631,6 +631,7 @@ background-color: var(--header-black);
 
     vertical-align: middle;
     align-content: center;
+    justify-content: center;
     position: relative;
 }
 
@@ -653,6 +654,7 @@ p a:hover {
     min-width: 300px;
     aspect-ratio: 16 / 9;
     align-self: center;
+    justify-self: center;
 
 }
 
